@@ -6,11 +6,7 @@
 Everything happens automatically.
 
 ---
-
-## 📌 CI/CD Architecture Flow
-
-
-https://github.com/user-attachments/assets/1f21ab68-93b2-4cef-ae09-29c9d9c3e19b
+<img width="1536" height="1024" alt="24db3508-657d-49d5-82e1-8ca621ec6a45" src="https://github.com/user-attachments/assets/9bd3085f-5591-4ee0-8a71-c4b261590bf1" />
 
 
 ### Simple Flow Explanation:
@@ -23,6 +19,12 @@ https://github.com/user-attachments/assets/1f21ab68-93b2-4cef-ae09-29c9d9c3e19b
 7. Email notification is sent
 
 ---
+## 📌 CI/CD Architecture Flow
+
+
+https://github.com/user-attachments/assets/1f21ab68-93b2-4cef-ae09-29c9d9c3e19b
+
+
 
 ## ⚙️ Step-by-Step Pipeline Execution (Easy Explanation)
 
