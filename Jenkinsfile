@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        // Must match Jenkins Global Tool / SonarQube config names
+        // Must match Jenkins Global Configuration names
         SONARQUBE_SERVER   = 'SonarQube'
         SONAR_SCANNER_NAME = 'SonarScanner'
         SONAR_PROJECT_KEY  = 'nodejs_App'
@@ -25,7 +25,6 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 script {
-                    // Resolve SonarScanner installation path from Jenkins tools
                     def scannerHome = tool name: "${SONAR_SCANNER_NAME}"
 
                     withSonarQubeEnv("${SONARQUBE_SERVER}") {
@@ -45,6 +44,12 @@ pipeline {
                 timeout(time: 5, unit: 'MINUTES') {
                     waitForQualityGate abortPipeline: true
                 }
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t nodejs-app:1.0 .'
             }
         }
     }
