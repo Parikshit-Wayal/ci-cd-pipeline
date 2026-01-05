@@ -1,7 +1,7 @@
 ┌────────────┐
 │  Developer │
 └─────┬──────┘
-      │  Git Push
+      │  -Git Push
       ▼
 ┌────────────┐
 │   GitHub   │
