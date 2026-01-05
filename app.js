@@ -1,7 +1,1 @@
-function broken() {
-    return;
-    console.log("never runs");
-}
-
-broken();
-
+console.log("welcom to nodejsApp")
