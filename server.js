@@ -11,10 +11,11 @@ const server = http.createServer((req, res) => {
     }
 
     res.writeHead(200, { "Content-Type": "text/plain" });
-    res.end("Hello from Simple Node CI App");
+    res.end("Hello from parikshit");
 });
 
 server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
 
