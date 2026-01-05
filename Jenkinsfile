@@ -2,14 +2,12 @@ pipeline {
     agent any
 
     environment {
-        // SonarQube configuration (from Jenkins Global Config)
+        // Jenkins Global Tool Configuration
         SONARQUBE_SERVER   = 'SonarQube'
         SONAR_SCANNER_NAME = 'SonarScanner'
-        SONAR_PROJECT_KEY  = 'simple-node-ci'
 
-        // Email & Docker configuration
-        EMAIL_RECIPIENTS = 'parikshitwayal3@gmail.com'
-        DOCKER_IMAGE     = "simple-node-ci:${BUILD_NUMBER}"
+        // Docker image (tagged with build number)
+        DOCKER_IMAGE = "simple-node-ci:${BUILD_NUMBER}"
     }
 
     stages {
