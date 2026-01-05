@@ -2,10 +2,11 @@
   "name": "simple-node-ci",
   "version": "1.0.0",
   "description": "Simple Node app for Jenkins CI",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node server.js"
   },
   "author": "Parikshit Wayal",
   "license": "MIT"
 }
+
