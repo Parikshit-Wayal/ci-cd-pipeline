@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        sonarQube 'SonarScanner'
-    }
-
     environment {
         SONARQUBE_SERVER = 'SonarQube'
         SONAR_PROJECT_KEY = 'nodejs_App'
