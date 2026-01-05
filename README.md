@@ -7,7 +7,7 @@
 │   GitHub   │
 │ Repository │
 └─────┬──────┘
-      │ Webhook Trigger
+      │ -Webhook Trigger
       ▼
 ┌──────────────────────────────┐
 │        Jenkins CI Server     │
